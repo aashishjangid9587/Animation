@@ -1,0 +1,137 @@
+<html>
+<head>
+<style>
+body{
+	background-color:black;
+	}
+h1{
+   overflow:hidden;
+margin:150px;
+	/*border:12px ridge burlywood; */
+	border-radius:10px;
+	font-size:60px;
+	font-family:forte;
+	letter-spacing:30px;
+	/*word-spacing:10px;*/
+	text-align:center;
+	background-image:linear-gradient(to left,yellow,cyan,red,black,red);
+	-webkit-background-clip:text;
+	color:transparent;
+	padding:50px;
+	text-transform:capitalize;	
+	text-shadow:3px 0px 0px red;
+	box-shadow:8px 5px 5px black;
+	/*text-decoration:line-through 3px double black;*/
+	/*text-decoration-skip-ink:auto;*/
+	transition:transform 0.4s;
+	/*transform:rotate(-5deg);*/
+	}
+	
+h1:hover{
+	//transform:rotate(35deg);
+	transform:scale(0.5);
+	font-size:60px;
+	box-shadow:0 0 5px red,0 0 25px red,0 0 50px red,0 0 75px red,0 0 100px red,0 0 150px red,0 0 200px red;
+	-webkit-box-reflect:below 1px linear-gradient(to right,transparent,red);
+	
+	}
+
+/*span:nth-child(2){
+	vertical-align:top;
+	font-size:25px;
+	border:medium ridge red;
+}
+*/
+
+h1 {
+ filter:hue-rotate(30deg);
+}
+h1 span:nth-child(1) {
+    display: inline-block;
+    width: 100%;
+    height: 11px;
+    background:linear-gradient(to right, transparent,beige);
+    top: 0;
+    position: absolute;
+    left: 0;
+	animation:LineMove 1s linear infinite;
+	
+}
+@keyframes LineMove{
+   0%{
+     left:-100%;
+   }
+   50%,100%{
+     left:100%;
+   }
+}
+h1 span:nth-child(2) {
+	display: inline-block;
+    width: 11px;
+    height: 100%;
+    background:linear-gradient(to top,transparent,beige);
+    top: 0;
+    position: absolute;
+    left: 0;
+	
+	animation:LineMove2 1s linear infinite;
+	animation-delay:0.90s;
+}
+@keyframes LineMove2{
+   0%{
+     top:100%;
+   }
+   50%,100%{
+     top:-100%;
+   }
+}
+h1 span:nth-child(3) {
+	position: absolute;
+	display: inline-block;
+    width: 100%;
+    height: 11px;
+    background:linear-gradient(to left, transparent,beige);
+    bottom: 0;
+    right: 0;
+	animation:LineMove3 1s linear infinite;
+	animation-delay:0.60s;
+}
+@keyframes LineMove3{
+   0%{
+     right:-100%;
+   }
+   50%,100%{
+     right:100%;
+   }
+}
+h1 span:nth-child(4) {
+	display: inline-block;
+    width: 11px;
+    height: 100%;
+    background:linear-gradient(to bottom, transparent,beige);
+    top: 0;
+    position: absolute;
+    right: 0;
+	
+	animation:LineMove4 1s linear infinite;
+	animation-delay:0.25s;
+}
+@keyframes LineMove4{
+   0%{
+     top:-100%;
+   }
+   50%,100%{
+     top:100%;
+   }
+}
+</style>
+</head>
+<body>
+<h1>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+aashish JaNGiD</h1>
+</body>
+</html>
